@@ -1,0 +1,53 @@
+ <Formik>
+    {
+        (formik)=>{
+            return <Form>
+                <Field>
+                    {
+                        ({field,form,meta})=>{
+                            return <div>
+                                <label htmlFor='fName'>First Name</label>
+                                <input id='fName' type='text' ></input>
+                            </div>
+                        }
+                    }
+
+                </Field>
+
+            </Form>
+        }
+    }
+   </Formik>
+
+          {/* <Field name="lastName">
+                                {
+                                    ({ field, form, meta }) => {
+                                        return <div>
+                                            <label htmlFor='lName'>Last Name</label>
+                                            <input {...field} value={meta.value} onChange={(e) => {
+                                                formik.setFieldValue("lastName", e.target.value)
+                                            }} id='lName' type='text' ></input>
+                                            {meta.touched && meta.error ?<div style={{color:"red",fontSize:"10px"}}>{meta.error}</div>:null}
+
+                                        </div>
+                                    }
+                                }
+
+                            </Field> */}
+
+
+                              {/* <Field name="description">
+                                {
+                                    ({ field, form, meta }) => {
+                                        return <div>
+                                            <label htmlFor='description'>Description</label>
+                                            <input {...field} id='description' value={meta.description} onChange={(e) => {
+                                                formik.setFieldValue("description", e.target.value)
+                                            }} ></input>
+                                            {meta.touched && meta.error?<div style={{color:"red",fontSize:"10px"}}>{meta.error}</div>:null}
+
+                                        </div>
+                                    }
+                                }
+
+                            </Field> */}
